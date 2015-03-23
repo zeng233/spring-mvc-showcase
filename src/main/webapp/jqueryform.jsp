@@ -64,9 +64,9 @@
 				<tr>
 					<td>Check:</td>
 					<td>
-						<input type="checkbox" name="market" value="1"> 
-						<input type="checkbox" name="market" value="2"> 
-						<input type="checkbox" name="market" value="3">
+						<input type="checkbox" name="markets" value="1"> 
+						<input type="checkbox" name="markets" value="2"> 
+						<input type="checkbox" name="markets" value="3">
 					</td>
 				</tr>
 				<tr>

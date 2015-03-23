@@ -53,3 +53,14 @@ function showResponse(responseText, statusText, xhr, $form) {
 		'\n\nThe output div should have already been updated with the responseText.');
 	$('#success').html(responseText.username);
 };
+
+var obj1 = {a:'a', b: 'b'};
+var obj2 = {a:'a', c: 'c'};
+function test(a) {
+	alert('function1:'+a);
+};
+function test(a) {
+	alert('function2:'+a);
+}
+test(2);
+console.log($.extend(obj1,obj2));
