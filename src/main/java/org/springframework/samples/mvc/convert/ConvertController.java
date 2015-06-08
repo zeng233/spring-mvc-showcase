@@ -36,7 +36,7 @@ public class ConvertController {
 		return "Converted formatted collection " + values;
 	}
 
-	@RequestMapping("bean")
+	@RequestMapping("bean")//各种转换 TODO
 	public @ResponseBody String bean(JavaBean bean) {
 		return "Converted " + bean;
 	}
