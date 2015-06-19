@@ -1,4 +1,4 @@
-package org.springframework.samples.mvc.zmytest.login;
+package org.springframework.zmytest.login;
 
 import javax.annotation.Resource;
 import javax.servlet.http.Cookie;

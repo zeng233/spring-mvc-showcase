@@ -1,4 +1,4 @@
-package org.springframework.samples.mvc.zmytest;
+package org.springframework.zmytest;
 
 import java.util.List;
 

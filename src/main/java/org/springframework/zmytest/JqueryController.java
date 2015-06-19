@@ -1,4 +1,4 @@
-package org.springframework.samples.mvc.zmytest;
+package org.springframework.zmytest;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

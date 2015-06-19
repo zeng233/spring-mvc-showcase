@@ -1,4 +1,4 @@
-package org.springframework.samples.mvc.zmytest.session;
+package org.springframework.zmytest.session;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
