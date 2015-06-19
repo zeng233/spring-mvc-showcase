@@ -1,3 +1,7 @@
+/**
+ * 
+ */
+
 $(function() {
 //	window.onbeforeunload = onbeforeunload_handler;
 //	window.onunload = onunload_handler;
@@ -11,25 +15,34 @@ $(function() {
 //		alert(warning);
 //	}
 
-//	window.onbeforeunload = function() // author: meizz
-//	{
-//		
+	window.onbeforeunload = function() // author: meizz
+	{
+		
 //		var n = window.event.screenX - window.screenLeft;
-//		console.log(n);
+//		console.log(window.event.clientY);
+//		console.log(window.screenTop);
 ////		alert('n值：' + n);
 //		var b = n > document.documentElement.scrollWidth - 20;
-//		console.log(b);
+////		console.log(b);
 //		if (b && window.event.clientY < 0 || window.event.altKey) {
 //			alert("是关闭而非刷新");
 //			//ajax请求设置成同步的
 //			console.log(33333);
 //			window.event.returnValue = ""; // 这里可以放置你想做的操作代码
 //		}
-//		
-//		return '退出吗？';
-//	}
-	
-	window.onbeforeunload = function() {
 		
+		if (!document.documentElement.scrollWidth) {
+			window.event.returnValue = "确定关闭"; // 这里可以放置你想做的操作代码
+		}
+		
+		return '退出吗？';
 	}
+	
+//	window.onbeforeunload = function() {
+//		
+//	};
+	
+//	$(window).on('beforeunload', function() {
+//	  return 'Your own message goes here...';
+//	});
 });
