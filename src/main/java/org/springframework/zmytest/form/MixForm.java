@@ -1,6 +1,7 @@
 package org.springframework.zmytest.form;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.zmytest.model.Student;
 
@@ -13,6 +14,8 @@ public class MixForm {
 	private List<Integer> markets;
 	private Integer sex;
 	private List<Student> students;
+	private Double fee;
+	private Map<String, Object> map;
 
 	public String getUsername() {
 		return username;
@@ -76,6 +79,22 @@ public class MixForm {
 
 	public void setStudents(List<Student> students) {
 		this.students = students;
+	}
+
+	public Double getFee() {
+		return fee;
+	}
+
+	public void setFee(Double fee) {
+		this.fee = fee;
+	}
+
+	public Map<String, Object> getMap() {
+		return map;
+	}
+
+	public void setMap(Map<String, Object> map) {
+		this.map = map;
 	}
 
 }

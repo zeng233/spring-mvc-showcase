@@ -88,9 +88,24 @@
 						name:<input type="text" name="students[2].name" value="cat"><br><br>
 					</td>
 				</tr>
+				<tr>
+					<td>学费：</td>
+					<td><input type="text" name="fee"></td>
+				</tr>
+				<tr>
+					<td>map测试</td>
+					<td>
+						<input type="checkbox" name="map[0]"  value="a">
+						<input type="checkbox" name="map[1]"  value="b">
+					</td>
+				</tr>
+				<tr>
+					<!-- <td>创建时间</td>
+					<td><input type="text" name="createTime"></td> -->
+				</tr>
 			</tbody>
 		</table>
-		<input type="submit" name="submitButton" value="Submit"/>
+		<input type="submit" value="Submit"/>
 	</form>
 	<div>
 		<span id="success"></span>

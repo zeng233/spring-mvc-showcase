@@ -35,6 +35,7 @@ public class FormController {
 	
 	@RequestMapping(method=RequestMethod.GET)
 	public void form() {
+		System.out.println("form");
 	}
 
 	@RequestMapping(method=RequestMethod.POST)
