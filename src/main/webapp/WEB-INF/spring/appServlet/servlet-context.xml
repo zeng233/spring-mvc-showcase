@@ -31,6 +31,24 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 	
+<!-- 	<beans:bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+		<beans:property name="messageConverters">
+			<beans:list>
+				<beans:bean class="org.springframework.http.converter.StringHttpMessageConverter">
+					<beans:property name="supportedMediaTypes">
+						<beans:list>
+							<beans:bean class="org.springframework.http.MediaType">
+								<beans:constructor-arg index="0" value="text"/>
+								<beans:constructor-arg index="1" value="json"/>
+								<beans:constructor-arg index="2" value="UTF-8"/>
+							</beans:bean>
+						</beans:list>
+					</beans:property>
+				</beans:bean>
+			</beans:list>
+		</beans:property>
+	</beans:bean> -->
+	
 	<!-- Only needed because we install custom converters to support the examples in the org.springframewok.samples.mvc.convert package -->
 	<beans:bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
 		<beans:property name="formatters">
